@@ -1,0 +1,176 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  /* Layout */
+  body {
+    background: #f8f9fa;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  header {
+    background-color: #4a90e2;
+    color: white;
+    padding: 1rem 2rem;
+    text-align: center;
+    position: relative;
+  }
+  
+  #user-info {
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    font-size: 0.9rem;
+  }
+  
+  footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 0.8rem;
+    margin-top: auto;
+  }
+  
+  /* Auth Forms */
+  .auth-form {
+    max-width: 400px;
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+    margin: 3rem auto;
+    text-align: center;
+  }
+  
+  .auth-form h2 {
+    color: #4a90e2;
+    margin-bottom: 1rem;
+  }
+  
+  .auth-form input {
+    width: 100%;
+    padding: 0.7rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+  }
+  
+  .auth-form button {
+    width: 100%;
+    padding: 0.8rem;
+    background-color: #4a90e2;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .auth-form button:hover {
+    background-color: #357abd;
+  }
+  
+  /* Search Bar */
+  .search-bar {
+    text-align: center;
+    margin: 1.5rem;
+  }
+  
+  .search-bar input {
+    width: 60%;
+    padding: 0.6rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+  }
+  
+  /* Course List */
+  .course-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.2rem;
+    padding: 2rem;
+  }
+  
+  .course-card {
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+    padding: 1rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .course-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+  }
+  
+  .course-card h3 {
+    color: #4a90e2;
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Course Detail */
+  .course-detail {
+    padding: 2rem;
+    max-width: 700px;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+  }
+  
+  .course-detail h2 {
+    color: #4a90e2;
+    margin-bottom: 1rem;
+  }
+  
+  .lesson {
+    padding: 0.8rem;
+    margin-bottom: 0.5rem;
+    background: #f1f1f1;
+    border-radius: 8px;
+  }
+  
+  /* Buttons */
+  button {
+    display: inline-block;
+    margin-top: 1rem;
+    background-color: #4a90e2;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 0.7rem 1.5rem;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #357abd;
+    transform: translateY(-2px);
+  }
+  
+  /* Progress Bar */
+  .progress-container {
+    background: #e4e4e4;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 1rem 0;
+  }
+  
+  .progress-bar {
+    height: 12px;
+    background: #4a90e2;
+    width: 0%;
+    transition: width 0.5s ease;
+  }
+  
